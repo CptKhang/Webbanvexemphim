@@ -1,0 +1,205 @@
+
+body {
+font-family: Arial, sans-serif; /* Sử dụng font Arial hoặc font sans-serif mặc định */
+}
+.carousel {
+    max-width: auto; /* Điều chỉnh kích thước tối đa của carousel */
+    margin: auto; /* Canh giữa carousel */
+}
+.carousel-inner {
+   
+    max-height: auto; /* Điều chỉnh kích thước tối đa của hình ảnh */
+}
+
+.carousel-item img {
+max-height: 500px; /* Điều chỉnh chiều cao tối đa của hình ảnh */
+width: 100%; /* Chiều rộng tối đa của hình ảnh */
+object-fit: cover; /* Đảm bảo hình ảnh không bị vùi dưới khi thay đổi kích thước */
+}
+.phim-hot {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+
+    background-color: #a36f26; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 10px 10px; /* Kích thước của box */
+    border-radius: 5px; /* Bo góc */
+    
+}
+.container {
+    text-align: center; /* Canh giữa nội dung */
+    
+
+}
+ul {
+    list-style: none; /* Loại bỏ bullet của list */
+    padding: 0; /* Loại bỏ padding mặc định của list */
+}
+li {
+    display: inline-block; /* Hiển thị các mục cạnh nhau */
+    margin-right: 10px; /* Khoảng cách giữa các mục */
+}
+li:last-child {
+    margin-right: 0; /* Loại bỏ margin-right của mục cuối cùng */
+}
+li button {
+    padding: 10px 10px; /* Kích thước của button */
+    background-color: #a36f26; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    border: none; /* Loại bỏ border */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+}
+.sap-chieu{
+    padding: 10px 10px; /* Kích thước của button */
+    background-color: #5d5954; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    border: none; /* Loại bỏ border */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ chuột khi di chuột qua */
+}
+.movie-info {
+display: inline-block; /* Hiển thị các phần tử trên cùng một hàng */
+margin-right: 10px; /* Khoảng cách giữa các phần tử */
+}
+.card {
+position: relative; /* Định vị tương đối để nội dung bên trong có thể định vị tuyệt đối */
+}
+
+
+
+.chi-tiet, .dat-ve {
+cursor: pointer;
+border: 1px solid #a36f26;
+display: none; /* Ẩn cả hai phần mặc định */
+position: absolute; /* Định vị tuyệt đối để có thể đặt vị trí */
+background-color: rgba(0, 0, 0, 0.5); /* Màu nền với độ trong suốt */
+padding: 10px 30px; /* Khoảng cách nội dung với viền */
+border-radius: 5px; /* Bo góc */
+color: #fff; /* Màu chữ */
+}
+.card-img-top {
+position: relative; /* Định vị tương đối để thêm overlay màu */
+transition: filter 0.2s ease; /* Thêm hiệu ứng transition cho thuộc tính filter */
+}
+
+.card-img-overlay {
+position: absolute; /* Định vị tuyệt đối để chồng lên ảnh */
+top: 0; /* Canh trên cùng */
+left: 0; /* Canh trái */
+width: 100%; /* Chiều rộng bằng ảnh */
+height: 100%; /* Chiều cao bằng ảnh */
+background-color: #000000; /* Màu overlay là màu đen có độ trong suốt */
+opacity: 0; /* Ẩn mặc định overlay */
+transition: opacity 0.1s ease; /* Thêm hiệu ứng transition cho thuộc tính opacity */
+}
+
+.card:hover .card-img-top {
+filter: grayscale(0%) blur(3px); /* Khi hover vào card, làm mờ ảnh và chuyển thành đen trắng */
+}
+
+.card:hover .card-img-overlay {
+opacity: 1; /* Hiển thị overlay khi hover vào card */
+}
+.dat-ve a,
+.chi-tiet a {
+font-size: 15px;
+
+color: #bca070; /* Màu chữ mặc định */
+text-decoration: none; /* Loại bỏ gạch chân mặc định */
+
+}
+.chi-tiet {
+top: 33%; /* Canh vị trí theo chiều dọc */
+left: 50%; /* Canh vị trí theo chiều ngang */
+transform: translate(-50%, -50%); /* Dịch chuyển nội dung 50% theo cả chiều ngang và dọc để căn giữa */
+}
+
+.dat-ve {
+top: 35%; /* Canh vị trí theo chiều dọc */
+left: 50%; /* Canh vị trí theo chiều ngang */
+transform: translate(-50%, 50%); /* Dịch chuyển nội dung 50% theo chiều ngang và dọc để căn giữa */
+}
+.card:hover .chi-tiet {
+display: block; /* Hiển thị chi tiết khi hover vào card */
+}
+
+.card:hover .dat-ve {
+display: block; /* Hiển thị đặt vé khi hover vào card */
+}
+.container1 {
+display: flex;
+justify-content: center;
+}
+.nav-item {
+font-size: 16px;
+padding: 10px;
+}
+.book-ticket-btn {
+    width: 100%; /* Fill theo chiều ngang */
+    background-color: #602323; /* Màu đỏ đậm */
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.book-ticket-btn a{
+    color: #ffffff;
+  
+    
+}
+.book-ticket-btn a:hover{
+    color: #ffffff;
+    text-decoration: none;
+}
+.movie-title{
+    font-size: 1.9vw;
+    font-weight: bold;
+}
+.star-rating {
+    font-size: 20px;
+}
+
+.star {
+    color: gold; /* Màu vàng */
+}
+.movie-summary {
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust the maximum width as needed */
+}
+.button-style {
+    max-width: 150px;
+    font-weight: bold;
+    padding: 0px 20px; /* Kích thước đệm */
+    font-size: 16px; /* Cỡ chữ */
+    background-color: #ffffff; /* Màu nền */
+    color: #090909; /* Màu chữ */
+    border: 1px solid; /* Không có đường viền */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Con trỏ chuột là bàn tay */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+
+
+.button-style:hover {
+    color: #ffffff;
+    background-color: #4f4a4a; /* Màu nền khi di chuột vào */
+}
+
+.button-style p {
+    margin-top: 15px; /* Loại bỏ khoảng trắng giữa các đoạn văn */
+}
+.font{
+    font-size: 1vw;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.booked-seat {
+    background-color: #FF5733; /* Đặt màu nền cho ghế đã đặt */
+}
+
+

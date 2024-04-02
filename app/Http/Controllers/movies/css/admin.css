@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .movies-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .movie {
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-image {
+    flex: 0 0 150px; /* Kích thước cố định cho phần hình ảnh */
+    background-size: cover; /* Đảm bảo hình ảnh được hiển thị đầy đủ */
+    border-radius: 5px 0 0 5px; /* Bo tròn góc cho phần hình ảnh */
+  }
+  
+  .movie-details {
+    flex: 1; /* Phần còn lại của div sẽ mở rộng theo chiều ngang */
+    padding: 20px;
+  }
+  
+  .movie h2 {
+    margin-top: 0;
+  }
+  /* Đảm bảo .movie-details được định vị tương đối */
